@@ -1,12 +1,15 @@
 def bubble_sort(items):
-    for i in range(len(items) - 1, 0, -1):
-        no_swap = True
-        for j in range(0, i):
-            if items[j + 1] < items[j]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-                no_swap = False
-        if no_swap:
-            return
+    count, swap = 0, 0
+    n = 0
+    while n < len(items) - 1:
+        count += 1
+        if items[n] > items[n + 1]:
+            swap += 1
+            items[n], items[n+1] = items[n+1], items[n]
+            n = 0
+        else:
+            n = n + 1
+    return items
 
 
 def merge_sort(items):
@@ -41,11 +44,13 @@ def merge_sort(items):
             j+=1
             k+=1
 
+    return items
+
 # Code to print the list
 def printList(items):
     for i in range(len(items)):
         print(items[i],end=" ")
-
+    print()
 
 def quick_sort(items):
     """Quicksort using array"""

@@ -1,10 +1,9 @@
 def sum_array(array):
-    total = 0
-    for i in array:
-        total += i
-    return total
-'''Return sum of all items in array'''
-result = sum(array)
+    if not array:
+        return 0  # End of recursion
+    else:
+        return array[0] + sum_array(array[1:])
+
 
 
 def fibonacci(n):
