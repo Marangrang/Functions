@@ -1,0 +1,7 @@
+README.md
+setup.py
+Rangz.egg-info/PKG-INFO
+Rangz.egg-info/SOURCES.txt
+Rangz.egg-info/dependency_links.txt
+Rangz.egg-info/requires.txt
+Rangz.egg-info/top_level.txt
