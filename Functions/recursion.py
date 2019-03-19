@@ -5,7 +5,6 @@ def sum_array(array):
     return total
 '''Return sum of all items in array'''
 result = sum(array)
-print("sum = ", result)
 
 
 def fibonacci(n):
@@ -16,8 +15,6 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-print (fibonacci(int(input())))
-
 
 def factorial(n):
     """Function to return the factorial
@@ -27,8 +24,6 @@ def factorial(n):
     else:
         '''Return n!'''
         return n * factorial(n-1)
-print (factorial(int(input())))
-
 
 
 def reverse(word):
@@ -37,4 +32,3 @@ def reverse(word):
         return word
     else:
         return reverse(word[1:]) + word[0]
-print (reverse(str(input())))

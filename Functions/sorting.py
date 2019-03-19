@@ -9,13 +9,6 @@ def bubble_sort(items):
             return
 
 
-items = input('Enter array of items: ').split()
-items = [int(x) for x in items]
-bubble_sort(items)
-print('Sorted list: ', end='')
-print(items)
-
-
 def merge_sort(items):
     if len(items) >1:
         mid = len(items)//2 #Finding the mid of the array
@@ -51,18 +44,7 @@ def merge_sort(items):
 # Code to print the list
 def printList(items):
     for i in range(len(items)):
-        print(items[i],end=" ") 
-    print()
-
-# driver code to test the above code
-if __name__ == '__main__':
-    items = input('Enter array of items: ').split()
-    items = [int(x) for x in items]
-    print ("Given array is", end="\n")
-    printList(items)
-    merge_sort(items)
-    print("Sorted array is: ", end="\n")
-    printList(items)
+        print(items[i],end=" ")
 
 
 def quick_sort(items):
@@ -74,8 +56,3 @@ def quick_sort(items):
         lesser = quick_sort([x for x in items[1:] if x < pivot])
         greater = quick_sort([x for x in items[1:] if x >= pivot])
         return lesser + [pivot] + greater
-
-items = input('Enter array of items: ').split()
-items = [int(x) for x in items]
-print("Sorted array is: ", end="\n")
-quick_sort(items)
