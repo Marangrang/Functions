@@ -19,11 +19,10 @@ def factorial(n):
     """Function to return the factorial
    of a number using recursion"""
     if n == 0:
-        return 1
-    if n == 1:
-        return 1
+        return
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        '''Return n!'''
+        return n * factorial(n-1)
 
 
 def reverse(word):
