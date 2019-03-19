@@ -18,11 +18,12 @@ def fibonacci(n):
 def factorial(n):
     """Function to return the factorial
    of a number using recursion"""
+    if n == 0:
+        return 1
     if n == 1:
-        return n
+        return 1
     else:
-        '''Return n!'''
-        return n * factorial(n-1)
+        return fibonacci(n-1) + fibonacci(n-2)
 
 
 def reverse(word):
