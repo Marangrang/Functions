@@ -8,7 +8,7 @@ setup(
     description='EDSA example python package',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
-    url='https://github.com/<marangrang>/<Rangz>',
-    author='<marangrang Tsepetsi>',
-    author_email='<mtsepetsi2@gmail.com>'
+    url='https://github.com/Marangrang/Rangz',
+    author='marangrang Tsepetsi',
+    author_email='mtsepetsi2@gmail.com'
 )

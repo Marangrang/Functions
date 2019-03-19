@@ -2,9 +2,9 @@ Metadata-Version: 1.0
 Name: Rangz
 Version: 0.1
 Summary: EDSA example python package
-Home-page: https://github.com/<marangrang>/<Rangz>
-Author: <marangrang Tsepetsi>
-Author-email: <mtsepetsi2@gmail.com>
+Home-page: https://github.com/Marangrang/Rangz
+Author: marangrang Tsepetsi
+Author-email: mtsepetsi2@gmail.com
 License: MIT
 Description: mypackage
         A simple library for efficiently solving recursive expressions and sorting.
